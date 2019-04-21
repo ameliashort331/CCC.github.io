@@ -1,0 +1,157 @@
+<html>
+<head>
+<!-- CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Data -->
+
+<script type="text/javascript" src="projects.js"></script>
+<script type="text/javascript" src="ids.js"></script>
+<script>
+var college_park = cp;
+
+var cp_ids = college_park_ids;
+
+var hyattsville = hyattsville;
+
+var university_park = up;
+var riverdale_park = rp;
+var pg_co = pg;
+</script>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+      <nav id="sidebar">
+          <div id="dismiss">
+              <i class="fas fa-arrow-left"></i>
+          </div>
+
+          <div class="sidebar-header">
+
+          </div>
+
+          <ul class="list-unstyled components" id = "here">
+
+            </ul>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var cp_list = document.createElement('li');
+
+var hyattsville_list = document.createElement('li');
+
+var up_list = document.createElement('li');
+
+var rp_list = document.createElement('li');
+
+var pg_list = document.createElement('li');
+
+
+var cp_link = document.createElement('a');
+cp_link.setAttribute("href","#homeSubmenu");
+cp_link.setAttribute("data-toggle","collapse");
+cp_link.setAttribute("aria-expanded","false");
+cp_link.setAttribute("class","dropdown-toggle");
+cp_link.innerHTML = "College Park";
+
+var cp_ul = document.createElement('ul');
+cp_ul.setAttribute("class","collapse list-unstyled");
+cp_ul.setAttribute("id","homeSubmenu");
+
+var index = 1;
+
+
+
+for (var area in college_park) {
+  console.log(college_park[area]);
+  console.log(college_park[area]['Area']);
+
+  var area_link = document.createElement('a');
+  area_link.setAttribute("href","#cp" + index);
+  area_link.setAttribute("data-toggle","collapse");
+  area_link.setAttribute("aria-expanded","false");
+  area_link.setAttribute("class","dropdown-toggle");
+  area_link.innerHTML = college_park[area]['Area'];
+
+  var area_ul = document.createElement('ul');
+  area_ul.setAttribute("class","collapse list-unstyled");
+  area_ul.setAttribute("id","cp1");
+  area_ul.appendChild(area_link);
+
+  for (var column_name in college_park[area]) {
+    if (column_name != 'Area') {
+      var list = document.createElement('li');
+      var project_name = document.createElement('div');
+      project_name.setAttribute("class","project-name");
+
+      var project_link = document.createElement('a');
+      project_link.setAttribute("href",cp_ids[0]['id' + index]);
+      project_link.innerHTML = college_park[area][column_name];
+
+      project_name.appendChild(project_link);
+      list.appendChild(project_name);
+      area_ul.appendChild(list);
+    }
+  }
+  cp_link.append(area_ul);
+  index += 1;
+
+}
+
+
+
+for (var area in hyattsville) {
+
+
+}
+
+for (var area in university_park) {
+
+
+}
+
+
+for (var area in riverdale_park) {
+
+
+}
+
+
+for (var area in pg_co) {
+
+
+}
+var sidebar = document.getElementById("here");
+cp_list.appendChild(cp_link);
+sidebar.appendChild(cp_list);
+</script>
+
+</body>
+</html>

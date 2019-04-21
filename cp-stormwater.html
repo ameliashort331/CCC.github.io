@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="logo.png">
+    <title>Stormwater Report Follow-Up</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="project.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="projects.js"></script>
+    <script type="text/javascript" src="ids.js"></script>
+    <script>
+    var college_park = cp;
+
+    var cp_ids = college_park_ids;
+
+    var hyattsville = hyattsville;
+
+    var university_park = up;
+    var riverdale_park = rp;
+    var pg_co = pg;
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+
+            </div>
+
+            <ul class="list-unstyled components" id = "here">
+
+              </ul>
+        </nav>
+
+
+        <!-- Page Content  -->
+        <div id="content">
+          <div class="navbar navbar-expand-lg navbar-light" id = 'nav1'>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+
+                <!-- <li class="nav-item">
+                  <img src = 'logo.png' alt = 'CCC Logo' class = 'logo' />
+                </li> -->
+
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Projects</a>
+                </li>
+
+                <li class = 'nav-item'>
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class = 'nav-item'>
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class = 'breadcrumbs'>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="javascript:void(0)">College Park</a></li>
+                <li class="breadcrumb-item"><a href="javascript:void(0)">Area A - Stormwater Management</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Stormwater Report Follow-Up</li>
+              </ol>
+            </nav>
+        </div>
+
+          <div class = 'description'>
+            <section>
+              <h1 class="display-4 heading">Stormwater Report Follow-Up</h1>
+            </section>
+            <p>The University of Maryland Environmental Finance Center recently reviewed stormwater priorities for planning and implementing improvements, in part to support the achievement of compliance of the Municipal Separated Storm Sewer System (MS4) permit issued by the State. The University may be able to collaborate on the development and implementation of all or part of an integrated water resource management plan for College Park, including entrepreneurial opportunities for green roofs, green walls, downspout disconnects, rain barrels, rain harvesting, rain gardens, swales, tree canopy enhancement.</p>
+            <a href="contact.html" class="btn btn-primary join" role="button" aria-pressed="false">Get involved</a>
+
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <!-- <i class="fas fa-align-left"></i> -->
+                <span>See more projects</span>
+            </button>
+            <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+            </button> -->
+          </div>
+
+            <div class="line"></div>
+
+
+
+
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+
+    <script>
+
+    var cp_list = document.createElement('li');
+
+    var hyattsville_list = document.createElement('li');
+
+    var up_list = document.createElement('li');
+
+    var rp_list = document.createElement('li');
+
+    var pg_list = document.createElement('li');
+
+
+    var cp_link = document.createElement('a');
+    cp_link.setAttribute("href","#homeSubmenu");
+    cp_link.setAttribute("data-toggle","collapse");
+    cp_link.setAttribute("aria-expanded","false");
+    cp_link.setAttribute("class","dropdown-toggle");
+    cp_link.innerHTML = "College Park";
+
+    var cp_ul = document.createElement('ul');
+    cp_ul.setAttribute("class","collapse list-unstyled");
+    cp_ul.setAttribute("id","homeSubmenu");
+
+
+    var hyattsville_link = document.createElement('a');
+    hyattsville_link.setAttribute("href","#Hyattsville");
+    hyattsville_link.setAttribute("data-toggle","collapse");
+    hyattsville_link.setAttribute("aria-expanded","false");
+    hyattsville_link.setAttribute("class","dropdown-toggle");
+    hyattsville_link.innerHTML = "Hyattsville";
+
+    var hyattsville_ul = document.createElement('ul');
+    hyattsville_ul.setAttribute("class","collapse list-unstyled");
+    hyattsville_ul.setAttribute("id","Hyattsville");
+
+
+
+    var up_link = document.createElement('a');
+    up_link.setAttribute("href","#up");
+    up_link.setAttribute("data-toggle","collapse");
+    up_link.setAttribute("aria-expanded","false");
+    up_link.setAttribute("class","dropdown-toggle");
+    up_link.innerHTML = "University Park";
+
+    var up_ul = document.createElement('ul');
+    up_ul.setAttribute("class","collapse list-unstyled");
+    up_ul.setAttribute("id","up");
+
+
+    var rp_link = document.createElement('a');
+    rp_link.setAttribute("href","#rp");
+    rp_link.setAttribute("data-toggle","collapse");
+    rp_link.setAttribute("aria-expanded","false");
+    rp_link.setAttribute("class","dropdown-toggle");
+    rp_link.innerHTML = "Riverdale Park";
+
+    var rp_ul = document.createElement('ul');
+    rp_ul.setAttribute("class","collapse list-unstyled");
+    rp_ul.setAttribute("id","rp");
+
+    var pg_link = document.createElement('a');
+    pg_link.setAttribute("href","#pg");
+    pg_link.setAttribute("data-toggle","collapse");
+    pg_link.setAttribute("aria-expanded","false");
+    pg_link.setAttribute("class","dropdown-toggle");
+    pg_link.innerHTML = "PG County";
+
+    var pg_ul = document.createElement('ul');
+    pg_ul.setAttribute("class","collapse list-unstyled");
+    pg_ul.setAttribute("id","pg");
+
+
+
+    var index = 1;
+    var project_index = 1;
+
+    for (var area in college_park) {
+
+      var area_link = document.createElement('a');
+      area_link.setAttribute("href","#cp" + index);
+      area_link.setAttribute("data-toggle","collapse");
+      area_link.setAttribute("aria-expanded","false");
+      area_link.setAttribute("class","dropdown-toggle");
+      area_link.innerHTML = college_park[area]['Area'];
+
+      var area_ul = document.createElement('ul');
+      area_ul.setAttribute("class","collapse list-unstyled");
+      area_ul.setAttribute("id","cp"+index);
+      cp_ul.appendChild(area_link);
+
+
+      for (var column_name in college_park[area]) {
+        if (column_name != 'Area') {
+          var list = document.createElement('li');
+          var project_name = document.createElement('div');
+          project_name.setAttribute("class","project-name");
+
+          var project_link = document.createElement('a');
+          console.log()
+          project_link.setAttribute("href",cp_ids[0]['id' + project_index]);
+          project_index += 1;
+          project_link.innerHTML = college_park[area][column_name];
+
+          project_name.appendChild(project_link);
+          list.appendChild(project_name);
+          area_ul.appendChild(list);
+        }
+      }
+      cp_ul.appendChild(area_ul);
+      index += 1;
+
+    }
+
+    index = 1;
+    project_index = 1;
+
+    for (var area in hyattsville) {
+
+      var area_link = document.createElement('a');
+      area_link.setAttribute("href","#h" + index);
+      area_link.setAttribute("data-toggle","collapse");
+      area_link.setAttribute("aria-expanded","false");
+      area_link.setAttribute("class","dropdown-toggle");
+      area_link.innerHTML = hyattsville[area]['Area'];
+
+      var area_ul = document.createElement('ul');
+      area_ul.setAttribute("class","collapse list-unstyled");
+      area_ul.setAttribute("id","h"+index);
+      hyattsville_ul.appendChild(area_link);
+
+
+      for (var column_name in hyattsville[area]) {
+        if (column_name != 'Area') {
+          var list = document.createElement('li');
+          var project_name = document.createElement('div');
+          project_name.setAttribute("class","project-name");
+
+          var project_link = document.createElement('a');
+          console.log()
+          project_link.setAttribute("href",cp_ids[0]['id' + project_index]);
+          project_index += 1;
+          project_link.innerHTML = hyattsville[area][column_name];
+
+          project_name.appendChild(project_link);
+          list.appendChild(project_name);
+          area_ul.appendChild(list);
+        }
+      }
+      hyattsville_ul.appendChild(area_ul);
+      index += 1;
+
+    }
+
+    index = 1;
+    project_index = 1;
+
+    for (var area in university_park) {
+      var area_link = document.createElement('a');
+      area_link.setAttribute("href","#up" + index);
+      area_link.setAttribute("data-toggle","collapse");
+      area_link.setAttribute("aria-expanded","false");
+      area_link.setAttribute("class","dropdown-toggle");
+      area_link.innerHTML = university_park[area]['Area'];
+
+      var area_ul = document.createElement('ul');
+      area_ul.setAttribute("class","collapse list-unstyled");
+      area_ul.setAttribute("id","up"+index);
+      up_ul.appendChild(area_link);
+
+
+      for (var column_name in university_park[area]) {
+        if (column_name != 'Area') {
+          var list = document.createElement('li');
+          var project_name = document.createElement('div');
+          project_name.setAttribute("class","project-name");
+
+          var project_link = document.createElement('a');
+          console.log()
+          project_link.setAttribute("href",cp_ids[0]['id' + project_index]);
+          project_index += 1;
+          project_link.innerHTML = university_park[area][column_name];
+
+          project_name.appendChild(project_link);
+          list.appendChild(project_name);
+          area_ul.appendChild(list);
+        }
+      }
+      up_ul.appendChild(area_ul);
+      index += 1;
+
+    }
+
+    index = 1;
+    project_index = 1;
+
+    for (var area in riverdale_park) {
+      var area_link = document.createElement('a');
+      area_link.setAttribute("href","#rp" + index);
+      area_link.setAttribute("data-toggle","collapse");
+      area_link.setAttribute("aria-expanded","false");
+      area_link.setAttribute("class","dropdown-toggle");
+      area_link.innerHTML = riverdale_park[area]['Area'];
+
+      var area_ul = document.createElement('ul');
+      area_ul.setAttribute("class","collapse list-unstyled");
+      area_ul.setAttribute("id","rp"+index);
+      rp_ul.appendChild(area_link);
+
+
+      for (var column_name in riverdale_park[area]) {
+        if (column_name != 'Area') {
+          var list = document.createElement('li');
+          var project_name = document.createElement('div');
+          project_name.setAttribute("class","project-name");
+
+          var project_link = document.createElement('a');
+          console.log()
+          project_link.setAttribute("href",cp_ids[0]['id' + project_index]);
+          project_index += 1;
+          project_link.innerHTML = riverdale_park[area][column_name];
+
+          project_name.appendChild(project_link);
+          list.appendChild(project_name);
+          area_ul.appendChild(list);
+        }
+      }
+      rp_ul.appendChild(area_ul);
+      index += 1;
+    }
+
+    index = 1;
+    project_index = 1;
+
+    for (var area in pg_co) {
+      var area_link = document.createElement('a');
+      area_link.setAttribute("href","#pg" + index);
+      area_link.setAttribute("data-toggle","collapse");
+      area_link.setAttribute("aria-expanded","false");
+      area_link.setAttribute("class","dropdown-toggle");
+      area_link.innerHTML = pg_co[area]['Area'];
+
+      var area_ul = document.createElement('ul');
+      area_ul.setAttribute("class","collapse list-unstyled");
+      area_ul.setAttribute("id","pg"+index);
+      pg_ul.appendChild(area_link);
+
+
+      for (var column_name in pg_co[area]) {
+        if (column_name != 'Area') {
+          var list = document.createElement('li');
+          var project_name = document.createElement('div');
+          project_name.setAttribute("class","project-name");
+
+          var project_link = document.createElement('a');
+
+          project_link.setAttribute("href",cp_ids[0]['id' + project_index]);
+          project_index += 1;
+          project_link.innerHTML = pg_co[area][column_name];
+
+          project_name.appendChild(project_link);
+          list.appendChild(project_name);
+          area_ul.appendChild(list);
+        }
+      }
+      pg_ul.appendChild(area_ul);
+      index += 1;
+
+    }
+
+    var sidebar = document.getElementById("here");
+    cp_list.appendChild(cp_link);
+    cp_list.appendChild(cp_ul);
+
+    hyattsville_list.appendChild(hyattsville_link);
+    hyattsville_list.appendChild(hyattsville_ul);
+
+    up_list.appendChild(up_link);
+    up_list.appendChild(up_ul);
+
+    rp_list.appendChild(rp_link);
+    rp_list.appendChild(rp_ul);
+
+    pg_list.appendChild(pg_link);
+    pg_list.appendChild(pg_ul);
+
+    sidebar.appendChild(cp_list);
+    sidebar.appendChild(hyattsville_list);
+    sidebar.appendChild(up_list);
+    sidebar.appendChild(rp_list);
+    sidebar.appendChild(pg_list);
+    </script>
+
+
+</body>
+
+</html>

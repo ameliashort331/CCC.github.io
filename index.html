@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="logo.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel = 'stylesheet' href = 'homepage_style.css' >
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="projects.js"></script>
+    <script type="text/javascript" src="ids.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type='text/javascript'>
+jQuery(document).ready(function($) {
+
+    $(".scroll").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 10);
+    });
+});
+</script>
+
+
+    <script>
+
+    var college_park = cp;
+
+    var cp_ids = college_park_ids;
+
+    var hyattsville = hyattsville;
+
+    var university_park = up;
+    var riverdale_park = rp;
+    var pg_co = pg;
+
+
+    </script>
+
+
+        <title>Campus Community Connection</title>
+  </head>
+  <body>
+
+
+<section id = 'first'>
+
+    <nav class="navbar navbar-expand-lg navbar-light transparent navbar-fixed-top" id = 'nav1'>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Projects</a>
+            </li>
+            <li class = 'nav-item active'>
+              <a class = "nav-link" href = "about.html">About</a>
+            </li>
+            <li class = 'nav-item'>
+              <a class = "nav-link" href = "contact.html">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+    </nav>
+
+
+</div>
+
+
+  <div class="container">
+    <div class = "top">
+      <div class="text-box">
+      <div class = 'title'>
+        <h1 class="display-4">Campus Community Connection</h1>
+      </div>
+      <p>Working with local government jurisdictions near the University of Maryland in College Park, the Campus Community Connection has developed community-based projects for exploration by undergraduate and graduate students, faculty and staff.</p>
+    </div>
+
+
+    </div>
+
+
+  </div>
+
+  </section>
+
+  <div id = 'scrolling'>
+    <a class = 'scroll' href="#tabs"><span></span></a>
+  </div>
+
+
+  <div id = 'projects' class = 'projects-container'>
+
+
+
+    <h1 class="display-4 projects">Projects</h1>
+
+
+  <section id="tabs" class="project-tab">
+
+    <div id = 'scrolling-up'>
+      <a class = 'scroll' href="#first"><span></span></a>
+    </div>
+              <div class="project_container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <nav>
+                              <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                  <a class="nav-item nav-link active" id="nav-cp-tab" data-toggle="tab" href="#nav-cp" role="tab" aria-controls="nav-cp" aria-selected="true">College Park</a>
+                                  <a class="nav-item nav-link" id="nav-hyattsville-tab" data-toggle="tab" href="#nav-hyattsville" role="tab" aria-controls="nav-hyattsville" aria-selected="false">Hyattsville</a>
+                                  <a class="nav-item nav-link" id="nav-up-tab" data-toggle="tab" href="#nav-university_park" role="tab" aria-controls="nav-up" aria-selected="false">University Park</a>
+                                  <a class="nav-item nav-link" id="nav-rp-tab" data-toggle="tab" href="#nav-riverdale_park" role="tab" aria-controls="nav-rp" aria-selected="false">Riverdale Park</a>
+                                  <a class="nav-item nav-link" id="nav-pg-tab" data-toggle="tab" href="#nav-pg" role="tab" aria-controls="nav-pg" aria-selected="false">Prince George's County</a>
+                              </div>
+                          </nav>
+
+                          <div class="tab-content" id="nav-tabContent">
+
+                            <!-- Project data goes in here! Dynamically created by the JSON input -->
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- TODO: Create an accurate map of municipalities  -->
+
+
+</div>
+
+
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+    <script>
+
+    var cp_table = document.createElement('div');
+    cp_table.className = "tab-pane fade show active"
+    cp_table.id = "nav-cp";
+    cp_table.setAttribute("role","tabpanel");
+    cp_table.setAttribute("aria-labelledby","nav-cp-tab");
+
+    var hyattsville_table = document.createElement('div');
+    hyattsville_table.className = "tab-pane fade";
+    hyattsville_table.id = "nav-hyattsville";
+    hyattsville_table.setAttribute("role","tabpanel");
+    hyattsville_table.setAttribute("aria-labelledby","nav-hyattsville-tab");
+
+    var university_park_table = document.createElement('div');
+    university_park_table.className = "tab-pane fade";
+    university_park_table.id = "nav-university_park";
+    university_park_table.setAttribute("role","tabpanel");
+    university_park_table.setAttribute("aria-labelledby","nav-up-tab");
+
+    var rp_table = document.createElement('div');
+    rp_table.className = "tab-pane fade";
+    rp_table.id = "nav-riverdale_park";
+    rp_table.setAttribute("role","tabpanel");
+    rp_table.setAttribute("aria-labelledby","nav-rp-tab");
+
+    var pg_table = document.createElement('div');
+    pg_table.className = "tab-pane fade";
+    pg_table.id = "nav-pg";
+    pg_table.setAttribute("role","tabpanel");
+    pg_table.setAttribute("aria-labelledby","nav-pg-tab");
+
+
+
+    var table_cp = document.createElement('table');
+    table_cp.className = "table";
+    table_cp.cellSpacing = "0";
+
+    var table_hyattsville = document.createElement('table');
+    table_hyattsville.className = "table";
+    table_hyattsville.cellSpacing = "0";
+
+    var table_up = document.createElement('table');
+    table_up.className = "table";
+    table_up.cellSpacing = "0";
+
+    var table_rp = document.createElement('table');
+    table_rp.className = "table";
+    table_rp.cellSpacing = "0";
+
+    var table_pg = document.createElement('table');
+    table_pg.className = "table";
+    table_pg.cellSpacing = "0";
+
+    var index = 1;
+
+    for (var area in college_park) {
+      var cp_area = document.createElement('thead');
+      var area_tr = document.createElement('tr');
+      var area_th = document.createElement('th');
+
+      area_th.innerHTML = college_park[area]['Area'];
+      area_tr.appendChild(area_th);
+      cp_area.appendChild(area_tr);
+      table_cp.appendChild(cp_area);
+
+      var tbody = document.createElement('tbody');
+      for (var column_name in college_park[area]) {
+        if (column_name != 'Area') {
+          var tr = document.createElement('tr');
+          var column = document.createElement('td');
+          var link = document.createElement('a');
+          link.setAttribute("href",cp_ids[0]['id' + index]);
+          link.setAttribute("id","project");
+
+          index += 1;
+          var format = document.createElement('div');
+          format.setAttribute("style","height:100%;width:100%;padding-left:10%;");
+
+          format.innerHTML = college_park[area][column_name];
+          link.appendChild(format);
+          column.appendChild(link);
+          tr.appendChild(column);
+          tbody.append(tr);
+          table_cp.appendChild(tbody);
+        }
+      }
+      cp_table.appendChild(table_cp);
+    }
+
+    for (var area in hyattsville) {
+      var hyattsville_area = document.createElement('thead');
+      var area_tr = document.createElement('tr');
+      var area_th = document.createElement('th');
+
+      area_th.innerHTML = hyattsville[area]['Area'];
+      area_tr.appendChild(area_th);
+      hyattsville_area.appendChild(area_tr);
+      table_hyattsville.appendChild(hyattsville_area);
+
+      var tbody = document.createElement('tbody');
+      for (var column_name in hyattsville[area]) {
+        if (column_name != 'Area') {
+          var tr = document.createElement('tr');
+          var column = document.createElement('td');
+          column.innerHTML = hyattsville[area][column_name];
+          tr.appendChild(column);
+          tbody.append(tr);
+          table_hyattsville.appendChild(tbody);
+        }
+      }
+      hyattsville_table.appendChild(table_hyattsville);
+    }
+
+    for (var area in university_park) {
+      var university_park_area = document.createElement('thead');
+      var area_tr = document.createElement('tr');
+      var area_th = document.createElement('th');
+
+      area_th.innerHTML = university_park[area]['Area'];
+      area_tr.appendChild(area_th);
+      university_park_area.appendChild(area_tr);
+      table_up.appendChild(university_park_area);
+
+      var tbody = document.createElement('tbody');
+      for (var column_name in university_park[area]) {
+        if (column_name != 'Area') {
+          var tr = document.createElement('tr');
+          var column = document.createElement('td');
+          column.innerHTML = university_park[area][column_name];
+          tr.appendChild(column);
+          tbody.append(tr);
+          table_up.appendChild(tbody);
+        }
+      }
+      university_park_table.appendChild(table_up);
+    }
+
+
+    for (var area in riverdale_park) {
+      var riverdale_park_area = document.createElement('thead');
+      var area_tr = document.createElement('tr');
+      var area_th = document.createElement('th');
+
+      area_th.innerHTML = riverdale_park[area]['Area'];
+      area_tr.appendChild(area_th);
+      riverdale_park_area.appendChild(area_tr);
+      table_rp.appendChild(riverdale_park_area);
+
+      var tbody = document.createElement('tbody');
+      for (var column_name in riverdale_park[area]) {
+        if (column_name != 'Area') {
+          var tr = document.createElement('tr');
+          var column = document.createElement('td');
+          column.innerHTML = riverdale_park[area][column_name];
+          tr.appendChild(column);
+          tbody.append(tr);
+          table_rp.appendChild(tbody);
+        }
+      }
+      rp_table.appendChild(table_rp);
+    }
+
+
+    for (var area in pg_co) {
+      var pg_area = document.createElement('thead');
+      var area_tr = document.createElement('tr');
+      var area_th = document.createElement('th');
+
+      area_th.innerHTML = pg_co[area]['Area'];
+      area_tr.appendChild(area_th);
+      pg_area.appendChild(area_tr);
+      table_pg.appendChild(pg_area);
+
+      var tbody = document.createElement('tbody');
+      for (var column_name in pg_co[area]) {
+        if (column_name != 'Area') {
+          var tr = document.createElement('tr');
+          var column = document.createElement('td');
+          column.innerHTML = pg_co[area][column_name];
+          tr.appendChild(column);
+          tbody.append(tr);
+          table_pg.appendChild(tbody);
+        }
+      }
+      pg_table.appendChild(table_pg);
+    }
+
+    var container = document.getElementById("nav-tabContent");
+
+    console.log(table_cp);
+    container.appendChild(cp_table);
+    container.appendChild(hyattsville_table);
+    container.appendChild(university_park_table);
+    container.appendChild(rp_table);
+    container.appendChild(pg_table);
+
+
+    </script>
+
+
+  </body>
+</html>

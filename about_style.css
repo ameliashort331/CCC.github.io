@@ -1,0 +1,63 @@
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  max-width: 100px;
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: #fff !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #fff !important;
+}
+
+ul.nav li.active a {
+    color: #fff !important;
+}
+
+nav .navbar-nav li a{
+  color: #fff !important;
+}
+
+
+.left {
+  max-width: 45%;
+  float: left;
+  margin: 1%;
+}
+
+.heading {
+  padding-left: 3%;
+  padding-top: 3%;
+}
+
+.video-container > video {
+    display: inline-block;
+    margin:0;
+    float: right;
+    padding-right:2%;
+}
+
+.video-container {
+    font-size: 0;
+}
+.thumbnail {
+  width: 100%;
+}
+
+p {
+  font-size: 23px;
+}
+
+.about-container {
+  padding: 2%;
+  /* background-color: #afafaf; */
+  /* opacity: 0.3; */
+}
